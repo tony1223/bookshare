@@ -1,0 +1,38 @@
+!!! 5
+html
+	include header
+	body
+		div.container.book-show
+			div.header
+				a(href="/bookshare/") 
+					h1 PTT Soft Job 版賞書活動票選
+				div.date 投票期間：2012/9/16 ~ 2012/9/28
+			div.books
+				div.book.clearfix
+					div.pull-left 
+						div.img
+							img(src=book.img)	
+						div.name #{book.name}
+					div.details.pull-left
+						div.type 書籍類型　#{book.type}
+						div.postDate 推薦時間　#{book.postDate} 						
+						div.buy 購買時間　#{book.buytime}
+						div.buyplace 購買地點　#{book.buyplace}
+						div.buyplace 入手方式　#{book.howtoget}
+						div.reference.pull-right
+					div.info.pull-left.clearfix
+						hr
+						div.author.section
+							div.title	推薦者
+							div.content	#{book.author}
+						div.why.section	
+							div.title	為何購買
+							div.content	#{book.why.replace(/\n/gi,"<br />")}
+						div.think.section
+							div.title	閱讀後的感想
+							div.content	#{book.think.replace(/\n/gi,"<br />")}
+						div.reference.pull-right
+							a(href=book.link,target="_blank") 更多這本書相關資料......
+		script(src="/js/require-jquery.js",data-main="/js/show")
+
+		

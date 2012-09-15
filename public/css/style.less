@@ -1,0 +1,111 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:black;
+  color:#CCDDCC;
+}
+
+
+.header{
+    a,a:hover{
+        color:#CCDDCC;
+        text-decoration: none;
+    }
+    h1{
+        text-align:center;
+    }
+    margin-top: 25px;
+    .date{
+        float:right;
+    }
+}
+
+.book{
+    text-align: center;
+    width:200px;
+    margin:20px;
+
+    .img{
+        img {
+            max-width:200px;
+        }
+        border-bottom:1px solid #DDFFDD;
+        -webkit-box-shadow: 0 0 1em #888;
+        -moz-box-shadow: 0 0 1em #888888;
+        box-shadow: 0 0 1em #888;               
+    }
+    .name{
+        padding:5px;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .descContainer{
+        background: none repeat scroll 0 0 #ABAAA7;
+        color: #444444;
+        display: none;
+        height: 60px;
+        width: 200px;
+        margin-top: -60px;
+        position: absolute;
+        overflow: hidden;
+        position: absolute;
+        .stamp{
+            background:#A00;
+            height: 60px;
+            width: 5px;            
+            float:left;
+        }
+        .desc{
+            padding: 16px 4px 0 4px;
+            float:left;
+            width:170px;
+        }
+    }
+
+}
+
+.book-show{
+    .book{
+        margin:0 auto;
+        width:600px;
+        margin-top:50px;
+        .img{
+            border-bottom:none;
+        }
+        .name{
+            margin-top: 10px;
+        }
+    }
+    .details{
+        width: 300px;
+        padding:0px 20px 0px 60px;
+        text-align: left;
+        font-size:18px;
+    }
+    .info{
+        text-align: left;
+        padding-bottom:50px;
+        .title{
+            border:2px dashed gray;
+            font-size:18px;
+            padding:10px;
+        }
+        .content{
+            font-size:18px;
+            border:2px dashed gray;
+            border-top:none;
+            padding:10px;
+        }
+        .why{
+            margin:5px 0px 0px 0px;
+        }
+        .section{
+            margin:25px 0px 0px 0px;
+        }
+
+        .reference{
+            font-size:22px;
+            margin-top:6px;
+        }
+
+    }
+}

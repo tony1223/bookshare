@@ -1,0 +1,102 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: black;
+  color: #CCDDCC;
+}
+.header {
+  margin-top: 25px;
+}
+.header a,
+.header a:hover {
+  color: #CCDDCC;
+  text-decoration: none;
+}
+.header h1 {
+  text-align: center;
+}
+.header .date {
+  float: right;
+}
+.book {
+  text-align: center;
+  width: 200px;
+  margin: 20px;
+}
+.book .img {
+  border-bottom: 1px solid #DDFFDD;
+  -webkit-box-shadow: 0 0 1em #888;
+  -moz-box-shadow: 0 0 1em #888888;
+  box-shadow: 0 0 1em #888;
+}
+.book .img img {
+  max-width: 200px;
+}
+.book .name {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.book .descContainer {
+  background: none repeat scroll 0 0 #ABAAA7;
+  color: #444444;
+  display: none;
+  height: 60px;
+  width: 200px;
+  margin-top: -60px;
+  position: absolute;
+  overflow: hidden;
+  position: absolute;
+}
+.book .descContainer .stamp {
+  background: #A00;
+  height: 60px;
+  width: 5px;
+  float: left;
+}
+.book .descContainer .desc {
+  padding: 16px 4px 0 4px;
+  float: left;
+  width: 170px;
+}
+.book-show .book {
+  margin: 0 auto;
+  width: 600px;
+  margin-top: 50px;
+}
+.book-show .book .img {
+  border-bottom: none;
+}
+.book-show .book .name {
+  margin-top: 10px;
+}
+.book-show .details {
+  width: 300px;
+  padding: 0px 20px 0px 60px;
+  text-align: left;
+  font-size: 18px;
+}
+.book-show .info {
+  text-align: left;
+  padding-bottom: 50px;
+}
+.book-show .info .title {
+  border: 2px dashed gray;
+  font-size: 18px;
+  padding: 10px;
+}
+.book-show .info .content {
+  font-size: 18px;
+  border: 2px dashed gray;
+  border-top: none;
+  padding: 10px;
+}
+.book-show .info .why {
+  margin: 5px 0px 0px 0px;
+}
+.book-show .info .section {
+  margin: 25px 0px 0px 0px;
+}
+.book-show .info .reference {
+  font-size: 22px;
+  margin-top: 6px;
+}
