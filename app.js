@@ -15,6 +15,7 @@ var config = require("./config");
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
+  
   app.use(require('less-middleware')({ src: __dirname + '/public/' ,force:true ,compress: false/*, debug:true*/}));
   app.use(CookieStore({ secret: config.secret }));
   app.use(express.bodyParser());
@@ -32,6 +33,7 @@ app.configure('production', function(){
 
 // Routes
 
+app.get('/', routes.home);
 app.get('/bookshare/', routes.index);
 app.get('/bookshare/show/:id', routes.show);
 

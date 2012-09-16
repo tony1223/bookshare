@@ -27,10 +27,7 @@ define("fb",[],function(){
     };  
   	window.fbAsyncInit = function() {
     	FB.init({
-	      appId      : '454565751232147', // App ID
-	      channelUrl : '//eventconnect.tonyq.org/channel.html', // Channel File
-	      status     : true, // check login status
-	      cookie     : true, // enable cookies to allow the server to access the session
+	      appId      : '462586273786023', // App ID
 	      xfbml      : true  // parse XFBML
     	});
       setTimeout(function(){

@@ -17,26 +17,58 @@ body {
 .header .date {
   float: right;
 }
-.book {
+.books {
+  margin: 0 auto;
+  float: none;
+}
+.books .book {
   text-align: center;
   width: 200px;
   margin: 20px;
+  position: relative;
 }
-.book .img {
+.books .book .countContainer {
+  height: 95px;
+  overflow: hidden;
+  position: absolute;
+  width: 75px;
+  display: none;
+}
+.books .book .countContainer .count {
+  background-color: #aa0000;
+  overflow: hidden;
+  position: absolute;
+  transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-box-shadow: 0 0 1em #888888;
+  -moz-box-shadow: 0 0 1em #888888;
+  box-shadow: 0 0 1em #888888;
+  left: -25px;
+  top: 19px;
+  width: 101px;
+  font-size: 16px;
+  height: 24px;
+  padding-top: 2px;
+  text-align: center;
+}
+.books .book .img {
   border-bottom: 1px solid #DDFFDD;
   -webkit-box-shadow: 0 0 1em #888;
   -moz-box-shadow: 0 0 1em #888888;
   box-shadow: 0 0 1em #888;
 }
-.book .img img {
+.books .book .img img {
   max-width: 200px;
 }
-.book .name {
+.books .book .name {
   padding: 5px;
   font-weight: bold;
   font-size: 22px;
 }
-.book .descContainer {
+.books .book .descContainer {
   background: none repeat scroll 0 0 #ABAAA7;
   color: #444444;
   display: none;
@@ -47,13 +79,13 @@ body {
   overflow: hidden;
   position: absolute;
 }
-.book .descContainer .stamp {
+.books .book .descContainer .stamp {
   background: #A00;
   height: 60px;
   width: 5px;
   float: left;
 }
-.book .descContainer .desc {
+.books .book .descContainer .desc {
   padding: 16px 4px 0 4px;
   float: left;
   width: 170px;
@@ -62,6 +94,9 @@ body {
   margin: 0 auto;
   width: 600px;
   margin-top: 50px;
+}
+.book-show .book .imgContainer {
+  width: 200px;
 }
 .book-show .book .img {
   border-bottom: none;
@@ -79,6 +114,11 @@ body {
   text-align: left;
   padding-bottom: 50px;
 }
+.book-show .info pre {
+  background: black;
+  color: #00EECC;
+  font-size: 18px;
+}
 .book-show .info .title {
   border: 2px dashed gray;
   font-size: 18px;
@@ -90,13 +130,17 @@ body {
   border-top: none;
   padding: 10px;
 }
-.book-show .info .why {
-  margin: 5px 0px 0px 0px;
-}
 .book-show .info .section {
   margin: 25px 0px 0px 0px;
+  border: 4px solid gray;
+}
+.book-show .info .guest {
+  min-height: 300px;
 }
 .book-show .info .reference {
   font-size: 22px;
   margin-top: 6px;
+}
+.book-show .info .reference a {
+  display: block;
 }

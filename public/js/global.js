@@ -1,6 +1,12 @@
 
 define("global",["jquery"],
 	function($){
-		return $({});
+		var values = {};
+		$(".global").each(function(){
+			values[this.name] = this.value;
+		})
+		var ret = $({});
+		ret.values = values;
+		return ret;
 	}
 );

@@ -1,21 +1,26 @@
 !!! 5
 html
-	include header
+	head
+		include header
 	body
 		div.container
-			div.header
+			div.header.clearfix
 				a(href="/bookshare/") 
 					h1 PTT Soft Job 版賞書活動票選
 				div.date 投票期間：2012/9/16 ~ 2012/9/28
-			div.books
+			div.books.span11
 				each book, i in books
-					div.book
-						div.img 
-							a.link(href="/bookshare/show/"+book.seqNo)
-								img(src=book.img)	
+					div.book(id="book"+book.seqNo,data-id=book.seqNo,data-pttcomments=book.pttcomments)
+						div.imgContainer
+							div.countContainer
+								div.count
+									div.value 0 推
+							div.img
+								a.link(href="/bookshare/show/"+book.seqNo)
+									img(src=book.img,title=book.name,alt=book.name)
 							div.descContainer 
 								div.stamp
-								div.desc	#{truncate(book.why+";"+book.think)}
+								div.desc	#{truncate(book.author,"&nbsp;說：",book.why,";",book.think)}
 						div.name #{book.name}
 		script(src="/js/require-jquery.js",data-main="/js/index")
 

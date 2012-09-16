@@ -1,23 +1,59 @@
-var Infos ={
-	Color:{
-		self:"#00FF00",
-		ordered:"#0000FF",
-		empty:"#ff0000"
-	}
-};
-
-require(["jquery","global","jquery.masonry.min"],
+require(["jquery","global","fb","jquery.isotope.min"],
 	function($,global,FBUtil,login,list){
 	$(function(){
-		$('.books').masonry({
-		  itemSelector: '.book',
-		  columnWidth: 300
+		$('.books').isotope({
+			masonry: {
+	          columnWidth: 250
+	        },
+		  	itemSelector: '.book',
+			sortBy: 'number',
+			getSortData: {
+	          number: function( $elem ) {
+	            var number = $elem.data("pttcomments");
+	            return parseInt( number, 10 ) * -1 ;
+	          }
+	        }
 		});
 
 		$(".book").hover(function(){
-			$(this).find(".descContainer").show();
+			var $book = $(this);
+			$book.find(".descContainer").show();
+			$book.find(".countContainer").hide();
 		},function(){
-			$(this).find(".descContainer").fadeOut();
+			var $book = $(this);
+			$book.find(".descContainer").fadeOut();
+			$book.find(".countContainer").fadeIn();
 		});
+
+		var result = [];
+		$(".book").each(function(){
+			var $book = $(this);
+			var showId = $book.data("id"),
+			pttcomments = $book.data("pttcomments") || 0;
+			if(showId){
+				result.push('"http://softjob.tonyq.org/bookshare/show/'+showId+'"');
+			}	
+		});
+		FBUtil.after(function(FB){
+			FB.api({
+			    method: 'fql.query',
+			    query: 'SELECT url,like_count FROM link_stat WHERE url in ('+result.join(",")+')'
+				
+			},function(response){
+				if(response != null){
+					$.each(response,function(ind,item){
+						var $book = $("#book"+item.url.replace("http://softjob.tonyq.org/bookshare/show/",""));
+						if($book.length){
+							var showId = $book.data("id"),
+							pttcomments = $book.data("pttcomments") || 0;
+							var count = parseInt(item.like_count,10) + parseInt(pttcomments,10);
+							$book.find(".countContainer .value").text( count +" 推");
+							$book.find(".countContainer").show();						
+						}
+					});
+				}
+			});
+		});		
+	
 	});
 });
