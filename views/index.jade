@@ -8,7 +8,7 @@ html
 				a(href="/bookshare/") 
 					h1 PTT Soft Job 版賞書活動票選
 				div.date 投票期間：2012/9/16 ~ 2012/9/28
-			div.books.span11
+			div.books.span9
 				each book, i in books
 					div.book(id="book"+book.seqNo,data-id=book.seqNo,data-pttcomments=book.pttcomments)
 						div.imgContainer
@@ -18,10 +18,12 @@ html
 							div.img
 								a.link(href="/bookshare/show/"+book.seqNo)
 									img(src=book.img,title=book.name,alt=book.name)
-							div.descContainer 
-								div.stamp
-								div.desc	#{truncate(book.author,"&nbsp;說：",book.why,";",book.think)}
-						div.name #{book.name}
+							a.link(href="/bookshare/show/"+book.seqNo)
+								div.descContainer 
+									div.stamp
+										div.desc	#{truncate(book.author,"&nbsp;說：",book.why,";",book.think)}
+						div.name 
+							a.link(href="/bookshare/show/"+book.seqNo) #{book.name}
 		script(src="/js/require-jquery.js",data-main="/js/index")
-
+		script(src="/js/ga.js")
 		

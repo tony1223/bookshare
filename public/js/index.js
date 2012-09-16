@@ -3,13 +3,17 @@ require(["jquery","global","fb","jquery.isotope.min"],
 	$(function(){
 		$('.books').isotope({
 			masonry: {
-	          columnWidth: 250
+	          columnWidth: 200
 	        },
 		  	itemSelector: '.book',
 			sortBy: 'number',
 			getSortData: {
 	          number: function( $elem ) {
 	            var number = $elem.data("pttcomments");
+	            return parseInt( number, 10 ) * -1 ;
+	          },
+	          pushcount: function( $elem ) {
+	            var number = $elem.data("pushcount");
 	            return parseInt( number, 10 ) * -1 ;
 	          }
 	        }
@@ -30,6 +34,7 @@ require(["jquery","global","fb","jquery.isotope.min"],
 			var $book = $(this);
 			var showId = $book.data("id"),
 			pttcomments = $book.data("pttcomments") || 0;
+			$book.data("pushcount",pttcomments);
 			if(showId){
 				result.push('"http://softjob.tonyq.org/bookshare/show/'+showId+'"');
 			}	
@@ -48,9 +53,12 @@ require(["jquery","global","fb","jquery.isotope.min"],
 							pttcomments = $book.data("pttcomments") || 0;
 							var count = parseInt(item.like_count,10) + parseInt(pttcomments,10);
 							$book.find(".countContainer .value").text( count +" 推");
-							$book.find(".countContainer").show();						
+							$book.find(".countContainer").show();			
+							$book.data("pushcount",count);
 						}
 					});
+					$('.books').isotope("updateSortData",$(".books .book"));
+					$('.books').isotope({sortBy: 'pushcount'});
 				}
 			});
 		});		

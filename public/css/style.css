@@ -20,10 +20,11 @@ body {
 .books {
   margin: 0 auto;
   float: none;
+  max-width: 800px;
 }
 .books .book {
   text-align: center;
-  width: 200px;
+  width: 150px;
   margin: 20px;
   position: relative;
 }
@@ -61,7 +62,7 @@ body {
   box-shadow: 0 0 1em #888;
 }
 .books .book .img img {
-  max-width: 200px;
+  max-width: 150px;
 }
 .books .book .name {
   padding: 5px;
@@ -73,7 +74,7 @@ body {
   color: #444444;
   display: none;
   height: 60px;
-  width: 200px;
+  width: 150px;
   margin-top: -60px;
   position: absolute;
   overflow: hidden;
@@ -86,9 +87,9 @@ body {
   float: left;
 }
 .books .book .descContainer .desc {
-  padding: 16px 4px 0 4px;
+  padding: 7px 4px 0 4px;
   float: left;
-  width: 170px;
+  width: 134px;
 }
 .book-show .book {
   margin: 0 auto;

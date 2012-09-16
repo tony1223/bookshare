@@ -3,12 +3,6 @@ html
 	head
 		include header
 		meta(property="fb:app_id",content="462586273786023")
-		meta(property="og:title",content="")
-		meta(property="og:image",content="")
-		meta(property="og:description",content="為什麼要買這本書？ "+book.why )
-		meta(property="og:ISBN",content="")
-		meta(property="og:url",content="http://softjob.tonyq.org/bookshare/show/"+book.seqNo)
-		meta(property="og:type",content="book")
 	body
 		input.global(name="showId",type="hidden",value=book.seqNo)
 		input.global(name="pttcomments",type="hidden",value=book.pttcomments)
@@ -62,5 +56,5 @@ html
 							a(href=book.pttLink,target="_blank") Ptt 上的原文連結
 							a(href=book.link,target="_blank") 更多這本書相關資料......
 		script(src="/js/require-jquery.js",data-main="/js/show")
-
+		script(src="/js/ga.js")
 		

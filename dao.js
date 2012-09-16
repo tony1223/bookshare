@@ -76,7 +76,7 @@ module.exports = dao = {
 				img :"http://im1.book.com.tw/exep/lib/image.php?image=http://addons.books.com.tw/G/001/6/0010410726.jpg&width=200&height=280&quality=80",
 				howtoget :"購買",
 				why :"從朋友那邊看到，翻了幾頁覺得值得買就自己買了。",
-				think :"         以前對 good practice 跟 bad practice 的分界不太瞭解，         看完這本書後最大的收穫是，其實不是每個語言特性都值得用到底，          很多容易造成麻煩的語言特性是根本不應該去碰的。           對一些過去曾經碰過得問題也覺得有回味的感覺，         會覺得如果早幾年看到這本書就好了。           他本身並不是基礎教學型的，但是他是\"防雷\"型的書，         讀了這本書可以增加自己對 JS 的\"品味\" ，知道什麼情況下容易出問題。          相當推薦給會一直接觸的 JS user 作為進階讀物。\n",
+				think :"以前對 good practice 跟 bad practice 的分界不太瞭解，\n看完這本書後最大的收穫是，其實不是每個語言特性都值得用到底，很多容易造成麻煩的語言特性是根本不應該去碰的。對一些過去曾經碰過得問題也覺得有回味的感覺，會覺得如果早幾年看到這本書就好了。他本身並不是基礎教學型的，但是他是\"防雷\"型的書，讀了這本書可以增加自己對 JS 的\"品味\" ，知道什麼情況下容易出問題。\n相當推薦給會一直接觸的 JS user 作為進階讀物。\n",
 				worth :"Yes",
 				suggest:"*****"
 			},
@@ -114,7 +114,7 @@ module.exports = dao = {
 				img :"http://im1.book.com.tw/exep/lib/image.php?image=http://addons.books.com.tw/G/001/9/0010381229.jpg&width=200&height=280&quality=80",
 				howtoget :"購買",
 				why :"在同事的桌上看到這本書，借來翻幾頁之後發現驚為天人",
-				think :"         如果有打算在這行待一輩子，請將這本書列入你的必讀清單\n        作者在本書中談到軟體開發中的各種議題，本書用了很棒的\n        隱喻及範例幫助讀者了解，讀完後我覺得腦袋被翻了好幾遍\n\n        我個人特別愛以下這句\n\n        \"如果您以龐迪亞克的設計為出發點，產品再怎麼測試也不會變成勞斯萊斯\"\n",
+				think :"如果有打算在這行待一輩子，請將這本書列入你的必讀清單\n作者在本書中談到軟體開發中的各種議題，本書用了很棒的\n隱喻及範例幫助讀者了解，讀完後我覺得腦袋被翻了好幾遍\n\n 我個人特別愛以下這句\n\n\"如果您以龐迪亞克的設計為出發點，產品再怎麼測試也不會變成勞斯萊斯\"\n",
 				worth :"Yes",
 				suggest:"*****"
 			},
@@ -130,7 +130,7 @@ module.exports = dao = {
 				buytime:"2012/07",
 				buyplace:"天瓏",
 				link :"http://findbook.tw/book/9789572240328/basic",
-				img :"http://im1.book.com.tw/exep/lib/image.php?image=http://addons.books.com.tw/G/001/9/0010381229.jpg&width=200&height=280&quality=80",
+				img :"http://static.findbook.tw/image/book/9789572240328/large",
 				howtoget :"購買",
 				why :"市面上介紹Android的開發書，大都是在教UI如何使用，要不然就是寫一堆很少用到的元件。真正在講Android底層原理的(非native layer)，一本都沒看到過(原文書可能有)。上個月看到同事他買了這本，翻了一下覺得超棒，當天就衝到天瓏買了一本。當然，天瓏老闆也說了「最近這本一堆人在買」。所以就買下去了。",
 				think :"一般在開發Android常用到的Activity, View，甚至是比較少用到的Window，書中用幾乎佔了80%以上的篇幅在講解內部原理。比如說TouchEvent的傳遞、Activity的Life cycle、IME的focus、View的繪圖原理，講的非常詳細。然後「一定愛配Source Code」，這樣子任督二脈就全打通了。\n台灣就是少了這種講解原理的書，每次在開發Android遇到問題的時候，不是上StackOverflow，要不然就只能上大陸的blog找答案。雖然這本是簡體翻為正體的，不過真的非常推薦！",
@@ -425,7 +425,7 @@ module.exports = dao = {
 				img :"http://im1.book.com.tw/exep/lib/image.php?image=http://addons.books.com.tw/G/001/5/0010324395.jpg&width=200&height=280&quality=80",
 				howtoget :"購買",
 				why :"看完 GEB 後上網搜尋 Lisp，結果亂找看到這本書",
-				think :"這本是作者的散文集，前半部主題不一，從校園生活到垃圾郵件都有談到\n        ，後半部則著重在程式語言演化的範式上。\n\n        其中有很多有趣的觀點，包括作者認為語法 (syntax) 是負債而非資產，\n        很多語言擁有複雜的語法，但因此增加的語言效用或威力卻十分有限，造\n        成無謂的複雜度，而設計模式的出現更是這類語言威力貧弱的直接證據。\n        Lisp 則與此不同，homoiconic 的特性使 Lisp code 幾乎就等於詞法解析\n        樹，並因此得以實現強大的巨集，這點到目前為止仍是獨一無二的。\n\n        當時看完還滿震撼的。一方面 Lisp 的確與眾不同，另一方面是對作者對\n        於所謂的程式語言威力量表非常看重 (執念?)，這對於當時認為『語言只\n        是工具』的小弟造成很大的衝擊，價值觀多少受到了影響。\n\n        當然這並不表示我完全接受作者的結論，但是在寫一點 hello world 等\n        級的 Lisp 程式後，我真的有一種眼界大開的感覺。雖然目前 Lisp 普遍\n        被認為是一種不是很實用的語言 (太有彈性、可讀性太差)，但是\n\n        clojure，一種 modern Lisp，已經誕生了，祂沒有 Common Lisp 背負的\n        歷史包袱，在所有 JAVA 庫及 JVM 的加持下未來將與 Ruby 等動態語言\n        直接競爭，目前 Heroku 已經支援 clojure 編程了，這種強而有力的新\n        Lisp，未來實在讓人期待。\n\n",
+				think :"這本是作者的散文集，前半部主題不一，從校園生活到垃圾郵件都有談到\n，後半部則著重在程式語言演化的範式上。\n\n其中有很多有趣的觀點，包括作者認為語法 (syntax) 是負債而非資產，\n 很多語言擁有複雜的語法，但因此增加的語言效用或威力卻十分有限，造\n成無謂的複雜度，而設計模式的出現更是這類語言威力貧弱的直接證據。\nLisp 則與此不同，homoiconic 的特性使 Lisp code 幾乎就等於詞法解析\n樹，並因此得以實現強大的巨集，這點到目前為止仍是獨一無二的。\n\n當時看完還滿震撼的。一方面 Lisp 的確與眾不同，另一方面是對作者對\n於所謂的程式語言威力量表非常看重 (執念?)，這對於當時認為『語言只\n是工具』的小弟造成很大的衝擊，價值觀多少受到了影響。\n\n當然這並不表示我完全接受作者的結論，但是在寫一點 hello world 等\n級的 Lisp 程式後，我真的有一種眼界大開的感覺。雖然目前 Lisp 普遍\n被認為是一種不是很實用的語言 (太有彈性、可讀性太差)，但是\n\nclojure，一種 modern Lisp，已經誕生了，祂沒有 Common Lisp 背負的\n歷史包袱，在所有 JAVA 庫及 JVM 的加持下未來將與 Ruby 等動態語言\n直接競爭，目前 Heroku 已經支援 clojure 編程了，這種強而有力的新\nLisp，未來實在讓人期待。\n\n",
 				worth :"Yes",
 				suggest:"*****"
 			},
@@ -461,7 +461,7 @@ module.exports = dao = {
 				img :"http://im1.book.com.tw/exep/lib/image.php?image=http://addons.books.com.tw/G/001/2/0010518492.jpg&width=200&height=280&quality=80",
 				howtoget :"購買",
 				why :"這本書是\"人月神話\"作者的新作品.",
-				think :" 其實我還沒看完T..T\n                但是這本書著言在\"設計\",\n                怎樣設計最佳？\n\n                是限制, 是開放？\n                是緊  , 是鬆  ？\n\n                這本書用他的經驗, 歸類出\"如何\"設計\n                                         或\n                                        \"運用\"設計\n                會是最符合某種需求的人.\n",
+				think :" 其實我還沒看完T..T\n但是這本書著言在\"設計\",\n怎樣設計最佳？\n\n是限制, 是開放？\n是緊  , 是鬆  ？\n\n這本書用他的經驗, 歸類出\"如何\"設計\n或\n\"運用\"設計\n會是最符合某種需求的人.\n",
 				worth :"Yes",
 				suggest:"*****"
 			},
@@ -479,7 +479,7 @@ module.exports = dao = {
 				img :"http://im1.book.com.tw/exep/lib/image.php?image=http://addons.books.com.tw/G/001/4/0010356474.jpg&width=200&height=280&quality=80",
 				howtoget :"購買",
 				why :"工具書",
-				think :" 這是本很好用的工具書\n                不適合剛開始學資料庫的初學者\n                但是對於已經學過資料的人來說\n                手邊有一本書可以查語法，很好用\n\n                SQL有個很討厭的地方是\n                不同類型的資料庫，語法會有些差異\n                但這本書有標明哪些語法適合哪些資料庫\n                在查的時候，也可以知道在哪種環境可以執行哪些語法\n",
+				think :" 這是本很好用的工具書\n不適合剛開始學資料庫的初學者\n但是對於已經學過資料的人來說\n手邊有一本書可以查語法，很好用\n\nSQL有個很討厭的地方是\n不同類型的資料庫，語法會有些差異\n但這本書有標明哪些語法適合哪些資料庫\n在查的時候，也可以知道在哪種環境可以執行哪些語法\n",
 				worth :"Yes",
 				suggest:"*****"
 			},
@@ -854,7 +854,7 @@ module.exports = dao = {
 				buytime:"2009",
 				buyplace:"台南誠品",
 				link :"http://www.eslite.com/product.aspx?pgid=1001113881800840",
-				img :"http://www.eslite.com/product.aspx?pgid=1001113881800840#",
+				img :"http://pic.eslite.com/Upload/Product/200809/m/633559753478507500.jpg",
 				howtoget :"購買",
 				why :"工具書",
 				think :"這本書是滿基本的一本入門書，但書的內容卻十分充實，內容除了\n介紹ASP.NET內的基本元件外，還介紹ASP.NET跟SQL的關係，並稍微\n介紹了ASP.NET在AJAX上的應用，個人覺得這本適合給要入門的朋友們\n翻閱的一本好書\n",
